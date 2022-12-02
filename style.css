@@ -22,8 +22,8 @@ body {
 
 .card {
     background: #242628;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
@@ -37,8 +37,8 @@ img {
 }
 
 .card_img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border: 4px solid var(--primary-color);
     border-radius: 50%;
     overflow: hidden;
@@ -48,10 +48,12 @@ img {
 }
 
 .card h2 {
+    font-size: 200%;
     margin-top: 50px;
 }
 
 .card p {
+    margin-top: 8px;
     font-size: 88% ;
     color: var(--primary-color);
 }
@@ -63,7 +65,7 @@ img {
 .card_social a {
     color: white;
     margin: 25px 20px;
-    font-size: 28px;
+    font-size: 32px;
     text-decoration: none;
 }
 
@@ -71,7 +73,7 @@ img {
     color: var(--primary-color);
 }
 
-.card button {
+/* .card button {
     width: 100px;
     height: 50px;
     border: 2px solid var(--primary-color);
@@ -86,7 +88,7 @@ img {
 .card button:hover {
     background: var(--primary-color);
     color : black ;
-}
+} */
 
 .card_img:hover {
     width: 100%;
@@ -112,3 +114,62 @@ img {
     color: black;
     font-weight : 500 ;
 }
+
+button {
+margin: 0px auto ;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 0 10px;
+color: white;
+text-shadow: 2px 2px rgb(116, 116, 116);
+text-transform: uppercase;
+border: solid 2px black;
+letter-spacing: 1px;
+font-weight: 600;
+font-size: 17px;
+background-color: hsl(49deg 98% 60%);
+border-radius: 50px;
+position: relative;
+overflow: hidden;
+transition: all .5s ease;
+}
+
+button:active {
+transform: scale(.9);
+transition: all 100ms ease;
+}
+
+button svg {
+transition: all .5s ease;
+z-index: 2;
+}
+
+.play {
+transition: all .5s ease;
+transition-delay: 300ms;
+}
+
+button:hover svg {
+transform: scale(3) translate(50%);
+}
+
+.now {
+position: absolute;
+left: 0;
+transform: translateX(-100%);
+transition: all .5s ease;
+z-index: 2;
+}
+
+button:hover .now {
+transform: translateX(10px);
+transition-delay: 300ms;
+}
+
+button:hover .play {
+transform: translateX(200%);
+transition-delay: 300ms;
+}
+
