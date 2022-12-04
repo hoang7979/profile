@@ -55,7 +55,7 @@ img {
 }
 
 .card p {
-    margin-top: 8px;
+    margin-top: 0px;
     font-size: 88% ;
     color: var(--primary-color);
 }
@@ -67,12 +67,13 @@ img {
 .card_social a {
     color: white;
     margin: 25px 20px;
-    font-size: 32px;
+    font-size: 28px;
     text-decoration: none;
 }
 
 .card_social a:hover {
     color: var(--primary-color);
+    opacity: 0.7;
 }
 
 /* .card button {
