@@ -18,10 +18,13 @@ body {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     color: white;
+
 }
 
+
+
 .card {
-    background:#07182E;;
+    background:#07182E;
     width: 350px;
     height: 450px;
     border-radius: 10px;
